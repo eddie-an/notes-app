@@ -10,7 +10,7 @@ import uuid from "react-uuid";
 
 function App() {
 
-  const [ notes, setNotes ] = useState(JSON.parse(localStorage.notes));
+  const [ notes, setNotes ] = useState(JSON.parse(localStorage.notes) || []);
 
   const options = {
     year: "numeric",
